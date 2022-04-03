@@ -1,0 +1,6 @@
+spring.redis.databse: "0"
+spring.redis.host: "redis-test-headless.default.svc.cluster.local"
+spring.redis.port: "6379"
+spring.redis.timeout: "60000"
+client.demo-gateway-client1.url: "http://demo-gateway-client1.prod.svc.cluster.local:8080"
+client.demo-gateway-client2.url: "http://demo-gateway-client2.prod.svc.cluster.local:8080"
