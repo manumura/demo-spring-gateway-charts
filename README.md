@@ -1,5 +1,17 @@
 # demo-spring-gateway-charts
 
+## Install Minikube
+
+https://minikube.sigs.k8s.io/docs/start/
+
+## Install ingress controller: https://bitnami.com/stack/nginx-ingress-controller/helm
+
+``` helm install nginx-ingress-controller-release bitnami/nginx-ingress-controller ```
+
+### For Minikube: https://kubernetes.github.io/ingress-nginx/deploy/#minikube
+
+``` minikube addons enable ingress ```
+
 ## Install Redis on Kubernetes: https://phoenixnap.com/kb/kubernetes-redis
 
 ``` helm repo add bitnami https://charts.bitnami.com/bitnami ```
@@ -17,10 +29,6 @@
 ``` redis-cli -h redis-test-master -a $REDIS_PASSWORD ``` OR ``` redis-cli -h redis-test-replicas -a $REDIS_PASSWORD ```
 
 ``` kubectl port-forward --namespace default svc/redis-test-master 6379:6379 ```
-
-## Install ingress controller: https://bitnami.com/stack/nginx-ingress-controller/helm
-
-``` helm install nginx-ingress-controller-release bitnami/nginx-ingress-controller ```
 
 ## Install Prometheus / Grafana : https://tanzu.vmware.com/developer/guides/observability-prometheus-grafana-p1/
 
