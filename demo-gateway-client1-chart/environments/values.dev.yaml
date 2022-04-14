@@ -40,8 +40,8 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: LoadBalancer
-#  type: ClusterIP NodePort
+  type: ClusterIP
+#  type: ClusterIP NodePort LoadBalancer
   port: 8080
 
 ingress:
@@ -54,7 +54,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: dev.localhost
+    - host: dev.local.me
       paths:
         - path: /demo-gateway-client1(/|$)(.*)
           pathType: ImplementationSpecific

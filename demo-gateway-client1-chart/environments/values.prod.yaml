@@ -54,7 +54,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: prod.localhost
+    - host: prod.local.me
       paths:
         - path: /demo-gateway-client1(/|$)(.*)
           pathType: ImplementationSpecific
