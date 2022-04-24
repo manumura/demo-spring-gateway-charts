@@ -1,5 +1,5 @@
 spring.redis.databse: "0"
-spring.redis.host: "redis-headless.default.svc.cluster.local"
+spring.redis.host: "redis-replicas.default.svc.cluster.local"
 spring.redis.port: "6379"
 spring.redis.timeout: "60000"
 client.demo-gateway-client1.url: "http://demo-gateway-client1.dev.svc.cluster.local:8080"
