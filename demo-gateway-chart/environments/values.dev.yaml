@@ -11,7 +11,7 @@ image:
   repository: manumura/demo-gateway
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: latest
+  tag: 0.0.2-SNAPSHOT
 
 imagePullSecrets: []
 nameOverride: demo-gateway
