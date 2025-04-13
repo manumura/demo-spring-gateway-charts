@@ -30,7 +30,7 @@
 
 ``` apt-get update; apt-get install curl ```
 
-``` curl demo-gateway-client2:8080/config/topics ``` OR ``` curl demo-gateway-client2.default.svc.cluster.local:8080/config/topics ``` (<service-name>.<namespace>.svc.cluster.local:<port>)
+``` curl demo-gateway-client1:8080/config/topics ``` OR ``` curl demo-gateway-client1.default.svc.cluster.local:8080/config/topics ``` (<service-name>.<namespace>.svc.cluster.local:<port>)
 
 ``` env ``` (show environment variables)
 
